@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resurgence Map Calculator</title>
+    <style>
+        body { 
+            display: flex; margin: 0; height: 100vh; width: 100vw; 
+            background: #1a1a1a; color: #ffffff; font-family: sans-serif; 
+            overflow: hidden; 
+        }
+        #sidebar { 
+            width: 280px; min-width: 280px; background: #252525; padding: 20px; 
+            border-right: 1px solid #444; display: flex; flex-direction: column; gap: 12px; z-index: 100; 
+        }
+        h2 { margin: 0; font-size: 2.5rem; color: #6AD44C; text-transform: uppercase; letter-spacing: 2px; line-height: 1; }
+        .author { font-size: 0.75rem; color: #888; margin-bottom: 10px; font-weight: bold; }
+        
+        .control-btn { 
+            padding: 12px; cursor: pointer; background: #444; color: white; 
+            border: none; border-radius: 6px; font-weight: bold; width: 100%; text-transform: uppercase; 
+        }
+        .control-btn:hover { background: #555; }
+
+        #cal-info { 
+            font-size: 0.85rem; padding: 15px; background: #000; color: #6AD44C; 
+            border-radius: 6px; min-height: 180px; border: 1px solid #6AD44C; 
+            display: flex; flex-direction: column; align-items: center; 
+            justify-content: center; text-align: center; overflow-y: auto;
+            line-height: 1.6; font-family: 'Courier New', Courier, monospace;
+            box-shadow: inset 0 0 10px rgba(106, 212, 76, 0.2);
+        }
+
+        /* Objective Menu Styles */
+        .obj-list { width: 100%; display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+        .obj-btn {
+            background: none; border: none; padding: 4px; cursor: pointer;
+            text-decoration: underline; text-transform: uppercase; font-weight: bold;
+            font-family: 'Courier New', Courier, monospace; font-size: 0.9rem;
+            transition: transform 0.1s;
+        }
+        .obj-btn:hover { transform: scale(1.1); filter: brightness(1.3); }
+        
+        #map-viewport { flex-grow: 1; overflow: hidden; background: #000; position: relative; }
+        canvas { display: block; }
+        hr { border: 0; border-top: 1px solid #444; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h2>RMC</h2>
+    <div class="author">Made By Phoxphor</div>
+
+    <button class="control-btn" style="background: #4e4010; color: #ffff00;" onclick="addAirdrop()">Add Airdrop</button>
+    <button class="control-btn" style="background: #2b4d24; color: #6AD44C;" onclick="findNearest()">Find Nearest</button>
+    <hr>
+    
+    <div id="cal-info">WAITING FOR INPUT...</div>
+    <hr>
+    
+    <button class="control-btn" onclick="toggleVisibility()">Toggle Icons</button>
+</div>
+
+<div id="map-viewport">
+    <canvas id="mapCanvas"></canvas>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
