@@ -49,23 +49,27 @@
 </head>
 <body>
 
-<div id="sidebar">
-    <h2>RMC</h2>
-    <div class="author">Made By Phoxphor</div>
-
-    <button class="control-btn" style="background: #4e4010; color: #ffff00;" onclick="addAirdrop()">Add Airdrop</button>
-    <button class="control-btn" style="background: #2b4d24; color: #6AD44C;" onclick="findNearest()">Find Nearest</button>
-    <hr>
+    <div id="sidebar">
+        <h2>RMC</h2>
+        <div class="author">Made By Phoxphor</div>
     
-    <div id="cal-info">WAITING FOR INPUT...</div>
-    <hr>
-    
-    <button class="control-btn" onclick="toggleVisibility()">Toggle Icons</button>
-</div>
+        <button class="control-btn" style="background: #4e4010; color: #ffff00;" onclick="addAirdrop()">Add Airdrop</button>
+        <button class="control-btn" style="background: #2b4d24; color: #6AD44C;" onclick="findNearest()">Find Nearest</button>
+        
+        <button class="control-btn" style="background: #1a3a4e; color: #00ffff; border: 1px solid #00ffff55;" onclick="syncPlane()">Sync Plane ✈</button>
+        
+        <hr>
+        
+        <div id="cal-info">WAITING FOR INPUT...</div>
+        <hr>
+        
+        <button class="control-btn" onclick="toggleVisibility()">Toggle Icons</button>
+        <button class="control-btn" onclick="togglePlanePath()">Toggle Plane Path</button>
+    </div>
 
-<div id="map-viewport">
-    <canvas id="mapCanvas"></canvas>
-</div>
+    <div id="map-viewport">
+        <canvas id="mapCanvas"></canvas>
+    </div>
 
 <script src="index.js"></script>
 </body>
