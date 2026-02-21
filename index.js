@@ -12,6 +12,184 @@ const MAX_ZOOM = 5.0;
 /** MASTER LANDMARKS PORT **/
 const MASTER_DATA = [{"x":560,"y":316,"type":"EXTRACT","label":"2345, 1375","gx":2345,"gy":1375},{"x":1113,"y":801,"type":"EXTRACT","label":"-1122, -1756","gx":-1122,"gy":-1756},{"x":928.2804180666083,"y":134.0164079713129,"type":"EXTRACT","label":"72, 2448","gx":72,"gy":2448},{"x":723,"y":847,"type":"BRIEF","label":"1119, -2009","gx":1119,"gy":-2009},{"x":669,"y":830,"type":"BLUE","label":"1637, -1912","gx":1637,"gy":-1912},{"x":689,"y":881,"type":"SAFE","label":"1488, -2371","gx":1488,"gy":-2371},{"x":662,"y":966,"type":"EXTRACT","label":"1768, -2815","gx":1768,"gy":-2815},{"x":1087,"y":398,"type":"GREEN","label":"-1209, 728","gx":-1209,"gy":728},{"x":1109,"y":405,"type":"BRIEF","label":"-1589, 755","gx":-1589,"gy":755},{"x":1086.0804180666082,"y":246.8164079713129,"type":"RED","label":"-1048, 1726","gx":-1048,"gy":1726},{"x":1095.4804180666083,"y":223.2164079713129,"type":"SAFE","label":"-1177, 1834","gx":-1177,"gy":1834},{"x":717,"y":426,"type":"RED","label":"1317, 596","gx":1317,"gy":596},{"x":691,"y":324,"type":"BLUE","label":"1488, 1239","gx":1488,"gy":1239},{"x":663,"y":302,"type":"BRIEF","label":"1672, 1378","gx":1672,"gy":1378},{"x":599,"y":228,"type":"RED","label":"2093, 1845","gx":2093,"gy":1845},{"x":596,"y":191,"type":"SAFE","label":"2112, 2078","gx":2112,"gy":2078},{"x":621,"y":136,"type":"BRIEF","label":"1948, 2425","gx":1948,"gy":2425},{"x":504.5359640180383,"y":78.91629194261012,"type":"EXTRACT","label":"2810, 2734","gx":2810,"gy":2734},{"x":756.7680851487163,"y":43.400431199511274,"type":"EXTRACT","label":"975, 2942","gx":975,"gy":2942},{"x":1287.2804180666083,"y":228.6164079713129,"type":"EXTRACT","label":"-2557, 1800","gx":-2557,"gy":1800},{"x":1413.585919310431,"y":480.08240572385085,"type":"EXTRACT","label":"-3347, 218","gx":-3347,"gy":218},{"x":1438.6185303040886,"y":636.1597218485776,"type":"EXTRACT","label":"-3498, -728","gx":-3498,"gy":-728},{"x":1287.5534576139914,"y":743.0059949004499,"type":"EXTRACT","label":"-2492, -1396","gx":-2492,"gy":-1396},{"x":492,"y":540,"type":"GREEN","label":"2797, -123","gx":2797,"gy":-123},{"x":506,"y":551,"type":"BRIEF","label":"2705, -192","gx":2705,"gy":-192},{"x":451,"y":574,"type":"SAFE","label":"3066, -337","gx":3066,"gy":-337},{"x":572,"y":678,"type":"SAFE","label":"2270, -993","gx":2270,"gy":-993},{"x":554,"y":684,"type":"BRIEF","label":"2389, -1031","gx":2389,"gy":-1031},{"x":767,"y":523,"type":"SAFE","label":"988, -16","gx":988,"gy":-16},{"x":687,"y":465,"type":"BRIEF","label":"1514, 350","gx":1514,"gy":350},{"x":1060,"y":505,"type":"BRIEF","label":"-939, 98","gx":-939,"gy":98},{"x":865,"y":578,"type":"BRIEF","label":"343, -362","gx":343,"gy":-362},{"x":1066,"y":693,"type":"BRIEF","label":"-979, -1087","gx":-979,"gy":-1087},{"x":1212.0815966287541,"y":811.8855073646067,"type":"BRIEF","label":"-2005, -1781","gx":-2005,"gy":-1781},{"x":1211.281596628754,"y":804.6855073646068,"type":"SAFE","label":"-1814, -1724","gx":-1814,"gy":-1724},{"x":853,"y":558,"type":"SAFE","label":"422, -236","gx":422,"gy":-236},{"x":1221,"y":534,"type":"SAFE","label":"-1998, -85","gx":-1998,"gy":-85},{"x":741,"y":624,"type":"BLUE","label":"1159, -652","gx":1159,"gy":-652},{"x":1175.8888854980469,"y":587,"type":"BRIEF","label":"-1701, -419","gx":-1701,"gy":-419},{"x":874.8888854980469,"y":184,"type":"LOCATION","label":"Brick House [279, 2124]","gx":279,"gy":2124},{"x":775.8888854980469,"y":214,"type":"LOCATION","label":"Metal Shack [930, 1935]","gx":930,"gy":1935},{"x":628.8888854980469,"y":193,"type":"LOCATION","label":"Dusty Depot [1923, 2162]","gx":1923,"gy":2162},{"x":712.8888854980469,"y":302,"type":"LOCATION","label":"Dig Site [1345, 1380]","gx":1345,"gy":1380},{"x":619.8888854980469,"y":610,"type":"LOCATION","label":"Cross Fire [2068, -457]","gx":2068,"gy":-457},{"x":758.8888854980469,"y":822,"type":"LOCATION","label":"Airfeild [1042, -1901]","gx":1042,"gy":-1901},{"x":934.8888854980469,"y":774,"type":"LOCATION","label":"Watch Tower [-162, -1548]","gx":-162,"gy":-1548},{"x":970.8888854980469,"y":810,"type":"LOCATION","label":"Brick House [-286, -1750]","gx":-286,"gy":-1750},{"x":889.8888854980469,"y":637,"type":"LOCATION","label":"Bridge [180, -627]","gx":180,"gy":-627},{"x":942.8888854980469,"y":541,"type":"LOCATION","label":"Fishing Village [-168, 4]","gx":-168,"gy":4},{"x":1024.129858213574,"y":201.178800791704,"type":"LOCATION","label":"Watch Tower [-707, 2027]","gx":-707,"gy":2027},{"x":1156.0972068320184,"y":372.7052838826638,"type":"LOCATION","label":"Bunker Lift [-1570, 942]","gx":-1570,"gy":942},{"x":981.0344315141286,"y":396.4087627187644,"type":"LOCATION","label":"Barracks [-417, 792]","gx":-417,"gy":792},{"x":1065.9514763863472,"y":406.0244648737524,"type":"LOCATION","label":"Bunker [-976, 732]","gx":-976,"gy":732},{"x":1127.4483800108287,"y":643.3229650993346,"type":"LOCATION","label":"Cabin [-1381, -762]","gx":-1381,"gy":-762},{"x":1070.9556962559316,"y":692.4798218125717,"type":"LOCATION","label":"Watch Tower [-1009, -1071]","gx":-1009,"gy":-1071},{"x":1208.836975166696,"y":570.1970616985249,"type":"LOCATION","label":"Big Town [-1917, -301]","gx":-1917,"gy":-301},{"x":1334.8888854980469,"y":516,"type":"LOCATION","label":"Cabin [-2746, 29]","gx":-2746,"gy":29},{"x":1336.0804180666082,"y":298.0164079713129,"type":"LOCATION","label":"Cabin [-2755, 1413]","gx":-2755,"gy":1413},{"x":1212.281596628754,"y":796.4855073646067,"type":"LOCATION","label":"kill house [-1940, -1724]","gx":-1940,"gy":-1724},{"x":1220.8888854980469,"y":650,"type":"BLUE","label":"BLUE [-1997, -804]","gx":-1997,"gy":-804},{"x":809.0621814446947,"y":306.538871600125,"type":"LOCATION","label":"Cabin [716, 1358]","gx":716,"gy":1358}];
 
+// --- ROCK IMAGE MARKER DEFINITION ---
+const DAVID_ROCK_GAME = { gx: -595, gy: 2639 };
+let davidRockPixel = null;
+
+// Make the rock image much smaller
+const DAVID_ROCK_IMAGE_SIZE = 34; // Was 160, now tiny (34x34 px at true map scale)
+const DAVID_ROCK_IMAGE_SRC = "DavidDaVinci's Rock.png";
+const davidRockImg = new Image();
+davidRockImg.src = DAVID_ROCK_IMAGE_SRC;
+
+// NEW: David snipe image
+const DAVID_SNIPE_IMAGE_SRC = "DavidRockSnipe.png";
+
+/**************************
+ * ROCK POPUP LOGIC START *
+ **************************/
+const ROCK_POPUP_MESSAGE = `
+  <div style="white-space:pre-line;">
+    <img src="${DAVID_SNIPE_IMAGE_SRC}" alt="David with sniper at the Rock" style="max-width: 100%; display: block; margin: 0 auto 1.3em auto; border-radius: 8px; box-shadow: 0 3px 14px 0 #0006;">
+<strong>Introduction:</strong>
+
+This isn’t just any boulder, it’s a rock and this particular one is my personal favorite, it truly is the greatest rock of all time on the map, no other rock can compare to this one, which is why it’s the best rock, you cannot comprehend how great this rock truly is
+
+<strong>Why?:</strong>
+
+Picture this: You jump out of the pinnacle of aerospace technology, also known as an “airplane” in non-nerd speak, near the radar station, which if you don’t know what a radar is it is, to sum up, a signal that gets sent from dish to dish, in which case a message is sent in said signal and bounces back on planes, bounces back on the radar dish, and informs you where the plane is relative to where it isn’t. Anyways, if you headed towards said radar station with let’s say, an explosive material commonly referred to by most and in game as “C4” that could possibly be in your current possession and/or let’s also say that you may or may not have an electronic keycard that is known by the color we as a society refer to as red and is used to unlock cargo shipment container which will most certainly be of a similar color to the electronic keycard, which is often done in order to hint at where this keycard could possibly be used. Continuing from this let us create another mostly fictional scenario which can in theory happen, and that being the individual known as you traveling to a point that collects scraps often times from other radio stations including the one in which this scenario revolves around, which is often times referred to as an “Extraction point” in which case you decide to head to after meticulously combing through this radar station, which unfortunately this scenario ends with you having a long chat with the reaper, to which you ask it (I do not assume the gender of a concept personified) “what in the actual hell just happened” to which it responds “you got wiped out with precision the likes of which has never been seen on this earth before right after DavidDaVinci (code-named “Bloodhound”) said a quote from cult classic tv show “Jericho” being “nuts” yes, that’s what he said after the life altering blow. But we’ve gone off topic to why this is important to this rock, the rock which is the keystone to it all which is why it has reached top one rock of all of gaming history, it is truly mind numbing the sheer greatness of this rock, you cannot comprehend the full elegance of the rock, the gracefulness, but back to the point, the reason is, to simply put, I’m just next to the rock with a high power sniper rifle and pistol (Glock, not a modified Barreta 92FS nicknamed “Cutlasses”)
+
+<strong>Popular Guests:</strong>
+
+First up is Urban_Squash8 also known as captain (pronounced cappy-tahn) who is my go to wingman or backup or reinforcements, whatever word you personally prefer.
+
+Second is bt-724 who came to the rock requesting aid fighting two separate teams of three to which I respond “Heard you need assistance” and we successfully pushed off the attack to which I escaped unharmed and bt suffered minor injuries
+
+<strong>Celebrity Guests:</strong>
+
+Napoleon Bonaparte visited after his exile in October 1815
+
+OJ Simpson on June 16th 1994 right before the warrant for his arrest, it is unknown what he said to the rock, but one thing can be sure, the rock needed years of therapy after the diabolical things it heard.
+
+The Rock (not to be confused with The Rock) visited his family on April 29th 2011
+
+<strong>Sources:</strong>
+
+Wikipedia
+
+DavidDaVinci himself
+
+<strong>Writers:</strong>
+
+Silver (Not getting paid enough for this shi-)
+</div>
+`;
+
+function showRockPopup() {
+    // Create popup if it doesn't exist
+    if (!document.getElementById('rock-popup-container')) {
+        const container = document.createElement('div');
+        container.id = 'rock-popup-container';
+        container.innerHTML = `
+            <div id="rock-popup-backdrop"></div>
+            <div id="rock-popup-content">
+                <button id="rock-popup-close" aria-label="Close">✖</button>
+                <h2 style="margin-top:0;margin-bottom:1rem;color:#D4747D;text-transform:none;">DavidDaVinci's Rock</h2>
+                <div id="rock-popup-scroll">
+                  ${ROCK_POPUP_MESSAGE}
+                </div>
+            </div>
+        `;
+        document.body.appendChild(container);
+
+        // Styles
+        const style = document.createElement('style');
+        style.innerHTML = `
+#rock-popup-container {
+  position: fixed;
+  z-index: 99999;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rock-popup-backdrop {
+  position: absolute;
+  top:0;left:0;width:100vw;height:100vh;
+  background: rgba(0,0,0,0.53);
+  z-index: 0;
+}
+#rock-popup-content {
+  position: relative;
+  max-width: 520px;
+  width: 92vw;
+  max-height: 82vh;
+  background: #23272e;
+  color: #e4e4e4;
+  border-radius: 14px;
+  box-shadow: 0 6px 30px 0 #111a  ;
+  padding: 2.1rem 2rem 1.5rem 2rem;
+  z-index: 1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: rockfadein 0.15s;
+}
+#rock-popup-content h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+#rock-popup-scroll {
+  overflow-y: auto;
+  padding-right: 0.2em;
+  max-height: 50vh;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-bottom:.25rem;
+  margin-top:-0.7rem;
+  /* Custom scrollbar for the popup */
+  scrollbar-width: thin;
+  scrollbar-color: #D4747D #23272e;
+}
+#rock-popup-scroll::-webkit-scrollbar {
+  width: 8px;
+  background: #23272e;
+}
+#rock-popup-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #72bddc 0%, #3962af 100%);
+  border-radius: 5px;
+  border: 1.5px solid #181A21;
+}
+#rock-popup-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7deaff 0%, #3962af 100%);
+}
+#rock-popup-scroll::-webkit-scrollbar-corner {
+  background: #23272e;
+}
+#rock-popup-scroll img {
+  margin-bottom: 0.8em;
+}
+#rock-popup-close {
+  position: absolute;
+  right: 13px;
+  top: 9px;
+  border: none;
+  background: transparent;
+  font-size: 1.5em;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.2s;
+  z-index: 10;
+  padding: .1em .4em;
+}
+#rock-popup-close:hover { color: #fff; }
+@keyframes rockfadein {
+    0% { opacity: 0; transform: scale(0.97);}
+    98% { opacity: .97; }
+    100% { opacity: 1; transform: scale(1);}
+};
+        `;
+        document.head.appendChild(style);
+
+        // Event listeners
+        document.getElementById('rock-popup-close').onclick = closeRockPopup;
+        document.getElementById('rock-popup-backdrop').onclick = closeRockPopup;
+    }
+    document.getElementById('rock-popup-container').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+}
+
+function closeRockPopup() {
+    const el = document.getElementById('rock-popup-container');
+    if (el) el.style.display = 'none';
+    document.body.style.overflow = '';
+}
+/************************
+ * ROCK POPUP LOGIC END *
+ ************************/
+
+// --- rest of core logic, unchanged ---
 /** PLANE LOGIC DATA **/
 const PLANE_WAYPOINTS = [
     {x: 918, y: -1585}, {x: 461, y: -1625}, {x: 2, y: -1614},
@@ -101,22 +279,16 @@ function drawRotatedEmoji(ctx, emoji, x, y, size, angleRad) {
 }
 
 // Get plane facing angle in radians, given a position (gx, gy)
-// Approach: Calculate vector from previous to next point
 function getPlaneDirectionAngleRad() {
     const elapsed = (Date.now() - planeTimeOffset) % PLANE_CYCLE_MS;
     const totalPoints = PLANE_WAYPOINTS.length;
     const fIndex = (elapsed / PLANE_CYCLE_MS) * totalPoints;
     const i = Math.floor(fIndex);
     const t = fIndex - i;
-    // Catmull-Rom: derivative w.r.t t is needed for tangent
     const p0 = PLANE_WAYPOINTS[(i - 1 + totalPoints) % totalPoints];
     const p1 = PLANE_WAYPOINTS[i % totalPoints];
     const p2 = PLANE_WAYPOINTS[(i + 1) % totalPoints];
     const p3 = PLANE_WAYPOINTS[(i + 2) % totalPoints];
-
-    // Catmull-Rom first derivative
-    // https://en.wikipedia.org/wiki/Centripetal_Catmull–Rom_spline
-    // dx/dt
     const t2 = t * t;
     const dx =
         0.5 * (
@@ -124,19 +296,16 @@ function getPlaneDirectionAngleRad() {
             + 2 * (2*p0.x - 5*p1.x + 4*p2.x - p3.x) * t
             + 3 * (-p0.x + 3*p1.x - 3*p2.x + p3.x) * t2
         );
-    // dy/dt
     const dy =
         0.5 * (
             (-p0.y + p2.y)
             + 2 * (2*p0.y - 5*p1.y + 4*p2.y - p3.y) * t
             + 3 * (-p0.y + 3*p1.y - 3*p2.y + p3.y) * t2
         );
-    // Math.atan2 returns angle in radians for x/y plane (canvas y grows down, so "-angle" if you want "up" = north)
     return Math.atan2(dy, dx);
 }
 
 function drawFlightPath(ctx) {
-    // 1. Draw the Path Line
     ctx.beginPath();
     ctx.setLineDash([15 / view.zoom, 15 / view.zoom]);
     ctx.strokeStyle = "rgba(58, 150, 221, 0.5)";
@@ -160,39 +329,27 @@ function drawFlightPath(ctx) {
     ctx.stroke();
     ctx.setLineDash([]);
 
-    // 2. Calculate Plane Position
     const pos = getLivePlanePos();
     const pix = getPixelFromGame(pos.gx || pos.x, pos.gy || pos.y);
     
     if (pix) {
-        // Initialize lastPlaneAngle if it doesn't exist yet
         if (typeof lastPlaneAngle === 'undefined') {
             window.lastPlaneAngle = 0;
         }
 
         let targetAngle = getPlaneDirectionAngleRad();
-
-        // WINDOWS EMOJI CORRECTION
-        // Most Windows fonts need +45 degrees to point the nose forward
         const noseCorrection = (Math.PI / 4) + Math.PI; 
         targetAngle += noseCorrection;
 
-        // SMOOTH TURNING (Interpolation)
         const turnSpeed = 0.06; 
         let diff = targetAngle - window.lastPlaneAngle;
-        
-        // Wrap around logic (prevents 360 spins)
         while (diff < -Math.PI) diff += Math.PI * 2;
         while (diff > Math.PI) diff -= Math.PI * 2;
-        
         window.lastPlaneAngle += diff * turnSpeed;
 
-        // 3. Draw the Plane
         const size = Math.max(20, 26 / view.zoom);
         
-        // If the angle math is broken, use targetAngle as a backup
         const finalAngle = isNaN(window.lastPlaneAngle) ? targetAngle : window.lastPlaneAngle;
-        
         drawRotatedEmoji(ctx, "✈️", pix.x, pix.y, size, finalAngle);
     }
 }
@@ -215,6 +372,10 @@ mapImg.onload = () => {
     canvas.width = window.innerWidth - 280;
     canvas.height = window.innerHeight;
     extractCoords();
+    // Calculate pixel position for DavidDaVinci's Rock
+    if (mapConfig.active) {
+        davidRockPixel = getPixelFromGame(DAVID_ROCK_GAME.gx, DAVID_ROCK_GAME.gy);
+    }
     saveAndRender();
 };
 
@@ -228,9 +389,7 @@ function screenToMap(sx, sy) {
     return { x: (sx - view.x) / view.zoom, y: (sy - view.y) / view.zoom };
 }
 
-// New helper: get markers sorted such that "PLAYER" types are last (drawn on top)
 function getSortedMarkersTopMeLast() {
-    // Copy array to not mutate markers
     return markers.slice().sort((a, b) => {
         if (a.type === "PLAYER" && b.type !== "PLAYER") return 1;
         if (a.type !== "PLAYER" && b.type === "PLAYER") return -1;
@@ -238,10 +397,30 @@ function getSortedMarkersTopMeLast() {
     });
 }
 
-// Modified getMarkerAtPos to allow "clicking the plane" as your own position
+// --- ROCK MODIFICATION: USE IMAGE, STRICT ZOOM, MINI HITBOX ---
 function getMarkerAtPos(mapX, mapY) {
     const baseRadius = 30;
     const hitRadius = Math.min(baseRadius / view.zoom, 60);
+
+    // Rock hit detection: only check if zoomed in super close (increased threshold to 3.8)
+    const ROCK_MIN_ZOOM = 3.8;
+    // adjust hitbox to be even smaller (relative to new small size)
+    if (
+        view.zoom >= ROCK_MIN_ZOOM &&
+        mapConfig.active &&
+        davidRockImg.complete && davidRockImg.naturalWidth > 0 &&
+        showMarkers // do NOT "hit" rock when icons are hidden
+    ) {
+        let rPix = getPixelFromGame(DAVID_ROCK_GAME.gx, DAVID_ROCK_GAME.gy);
+        if (rPix) {
+            // ultra-tiny hitbox: (12px at true scale)
+            const rockHitbox = Math.max((DAVID_ROCK_IMAGE_SIZE / mapConfig.scaleX) / 2, 15 / view.zoom);
+            const dist = Math.sqrt((mapX - rPix.x) ** 2 + (mapY - rPix.y) ** 2);
+            if (dist < rockHitbox) {
+                return { type: "ROCK", label: "DavidDaVinci's Rock", x: rPix.x, y: rPix.y, gx: DAVID_ROCK_GAME.gx, gy: DAVID_ROCK_GAME.gy, isRock: true };
+            }
+        }
+    }
 
     // 1. Prioritize "me on plane" marker first (type === PLAYER, isLockedToPlane)
     let playerOnPlane = markers.find(m =>
@@ -250,14 +429,14 @@ function getMarkerAtPos(mapX, mapY) {
     );
     if (playerOnPlane) return playerOnPlane;
 
-    // 2. Then manual (non-plane-locked) PLAYER marker (if exists)
+    // 2
     let playerManual = markers.find(m =>
         m.type === "PLAYER" && !m.isLockedToPlane &&
         Math.sqrt((mapX - m.x) ** 2 + (mapY - m.y) ** 2) < hitRadius
     );
     if (playerManual) return playerManual;
 
-    // 3. Then check hovering the live plane (PLANE lock hover)
+    // 3
     const planePos = getLivePlanePos();
     const pPix = getPixelFromGame(planePos.x, planePos.y);
     if (pPix) {
@@ -273,7 +452,7 @@ function getMarkerAtPos(mapX, mapY) {
         }
     }
 
-    // 4. Then check all other markers (except PLAYER), sorted as before
+    // 4
     for (let i = 0; i < markers.length; i++) {
         const m = markers[i];
         if ((m.type !== "PLAYER") && Math.sqrt((mapX - m.x) ** 2 + (mapY - m.y) ** 2) < hitRadius) {
@@ -366,12 +545,10 @@ function addAirdrop() {
     }
 }
 
-// Also pop up objective menu for Me (on plane)
 function findNearest() {
     pendingAirdropCalculation = false;
     isWaitingForLocationClick = true;
     activeTarget = null;
-    // Instead of message only, if there is a "PLAYER" marker and it is locked to plane, immediately show the menu as well.
     const planePlayer = markers.find(m => m.type === "PLAYER" && m.isLockedToPlane);
     if (planePlayer) {
         showObjectiveMenu();
@@ -436,11 +613,14 @@ function saveAndRender() {
         mapConfig.offsetX = aXg - (aXp * mapConfig.scaleX); mapConfig.offsetY = aYg - (aYp * mapConfig.scaleY);
         mapConfig.active = true;
     }
+    // Update David's rock pixel WHENEVER render needed (for resizing/zoom)
+    davidRockPixel = mapConfig.active ? getPixelFromGame(DAVID_ROCK_GAME.gx, DAVID_ROCK_GAME.gy) : null;
     localStorage.setItem('savedMarkers', JSON.stringify(markers));
 }
 
 // --- RENDER LOOP ---
 // Fix: Always draw "me on plane" marker if it exists, regardless of isWaitingForLocationClick.
+// --- EXTENDED: DRAW DAVID'S ROCK IMAGE IF ZOOMED IN ENOUGH ---
 function render() {
     const lerp = 0.03;
     if (!isDragging) {
@@ -460,15 +640,46 @@ function render() {
         drawFlightPath(ctx);
     }
 
+    let rockDrawnPixel = null;
+    const ROCK_MIN_ZOOM = 3.8;
+    const ROCK_ALPHA_MIN = 3.8;
+    const ROCK_ALPHA_MAX = 5.0; // MAX_ZOOM
+    if (
+        showMarkers &&
+        view.zoom >= ROCK_MIN_ZOOM &&
+        mapConfig.active &&
+        davidRockImg.complete && davidRockImg.naturalWidth > 0
+    ) {
+        let drPix = getPixelFromGame(DAVID_ROCK_GAME.gx, DAVID_ROCK_GAME.gy);
+        if (drPix) {
+            // Calculate fade-in alpha for rock based on zoom level
+            let alpha = (view.zoom - ROCK_ALPHA_MIN) / (ROCK_ALPHA_MAX - ROCK_ALPHA_MIN);
+            alpha = Math.max(0, Math.min(1, alpha));
+            const drawW = DAVID_ROCK_IMAGE_SIZE / mapConfig.scaleX;
+            const drawH = DAVID_ROCK_IMAGE_SIZE / mapConfig.scaleY;
+
+            ctx.save();
+            ctx.globalAlpha = alpha;
+            ctx.imageSmoothingEnabled = true;
+            ctx.drawImage(
+                davidRockImg,
+                drPix.x - drawW / 2,
+                drPix.y - drawH / 2,
+                drawW,
+                drawH
+            );
+            ctx.restore();
+            rockDrawnPixel = drPix;
+        }
+    }
+
     const mapMouse = screenToMap(mouseX, mouseY);
     const hovered = getMarkerAtPos(mapMouse.x, mapMouse.y);
     const g = getGameCoords(mapMouse.x, mapMouse.y);
 
-    // ---- AUTO-FOLLOW LOGIC FOR THE ONLY LOCKED PLAYER MARKER, IF EXISTS ----
-    // Only one "me" icon is allowed (type==='PLAYER')
+    // ---- AUTO-FOLLOW of locked PLAYER/plane unchanged ----
     let lockedPlayer = markers.find(m => m.type === "PLAYER" && m.isLockedToPlane);
     if (lockedPlayer) {
-        // Always update to follow live plane
         const livePlane = getLivePlanePos();
         lockedPlayer.gx = Math.round(livePlane.x);
         lockedPlayer.gy = Math.round(livePlane.y);
@@ -477,15 +688,12 @@ function render() {
             lockedPlayer.x = followPix.x;
             lockedPlayer.y = followPix.y;
         }
-        // Only update HUD for active marker
         if (activeTarget) {
             updateTacticalHUD(lockedPlayer, activeTarget);
         }
     }
 
-    // Draw Markers (draw non-me, then PLAYER/me last so it's always on top)
     getSortedMarkersTopMeLast().forEach(m => {
-        // No longer skip "me on plane" icon ever
         const isCurrentlyPulsing = (m === activeTarget && Date.now() < pulseEndTime);
         const isAlwaysVisible = (m.type === 'PLAYER' || m.type === 'AIRDROP' || isCurrentlyPulsing);
 
@@ -513,14 +721,19 @@ function render() {
         }
     });
 
-    // HUD Tooltip
+    // HUD Tooltip (mod: if hovered rock, say DavidDaVinci's Rock!)
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     let hudText = isWaitingForLocationClick ? "CLICK YOUR POSITION" :
         isWaitingForPlaneSync ? "CLICK PLANE ON DASHED LINE" : `X: ${g.x}, Y: ${g.y}`;
     let hudColor = (isWaitingForLocationClick || isWaitingForPlaneSync) ? "#00ffff" : "#6AD44C";
     if (hovered && hovered.gx !== undefined) {
-        hudText = `LOCKED: ${hovered.gx}, ${hovered.gy}`;
-        hudColor = colors[hovered.type];
+        if (hovered.type === "ROCK" || hovered.isRock) {
+            hudText = `DavidDaVinci's Rock [-595, 2639]`;
+            hudColor = "#cccccc";
+        } else {
+            hudText = `LOCKED: ${hovered.gx}, ${hovered.gy}`;
+            hudColor = colors[hovered.type];
+        }
     }
     ctx.fillStyle = "rgba(0,0,0,0.8)";
     ctx.fillRect(mouseX + 15, mouseY + 15, ctx.measureText(hudText).width + 12, 25);
@@ -563,9 +776,7 @@ canvas.addEventListener('mousedown', (e) => {
 
         // --- REWRITE: ALLOW "CLICKING THE PLANE" AS YOUR POSITION ---
         if (isWaitingForLocationClick && m && m.isPlane) {
-            // Remove any existing me markers (PLAYER)
             markers = markers.filter(mark => mark.type !== 'PLAYER');
-            // Add "me on plane" marker (locked to plane)
             const livePlane = getLivePlanePos();
             const planePix = getPixelFromGame(livePlane.x, livePlane.y);
             const planePlayer = {
@@ -591,15 +802,19 @@ canvas.addEventListener('mousedown', (e) => {
             return;
         }
 
+        // --- ROCK: clicking the rock now opens a popup! ---
+        if (m && (m.type === "ROCK" || m.isRock)) {
+            showRockPopup();
+            return;
+        }
+
         // LOCK TO PLANE MODE (add a me icon that sticks to plane coords, but only if prompted)
         if (!isWaitingForLocationClick && m && (m.isPlane || (m.type === 'PLAYER' && m.isLockedToPlane))) {
             if (e.button === 2) {
-                // Right click: Delete all "me" icons locked to plane
                 markers = markers.filter(mark => !(mark.type === 'PLAYER' && mark.isLockedToPlane));
                 saveAndRender();
                 return;
             }
-            // Remove existing me icon(s)
             markers = markers.filter(mark => mark.type !== 'PLAYER');
             const livePlane = getLivePlanePos();
             const planePlayer = {
@@ -617,9 +832,7 @@ canvas.addEventListener('mousedown', (e) => {
             return;
         }
 
-        // MANUAL PLAYER LOCATION MODE (add a manual me marker)
         if (isWaitingForLocationClick && (!m || !m.isPlane)) {
-            // Remove existing me icons first
             markers = markers.filter(mark => mark.type !== 'PLAYER');
             const myC = getGameCoords(mapPos.x, mapPos.y);
             const playerMark = {
